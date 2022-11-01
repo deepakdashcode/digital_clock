@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Digital Clock</string>
+    <string name="_00">00</string>
+</resources>

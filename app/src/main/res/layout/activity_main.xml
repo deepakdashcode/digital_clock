@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nature_tree_main"
+    android:gravity="center"
+    android:id="@+id/linearLayoutMain"
+    android:onClick="pick"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:id="@+id/textClockTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00 : 00"
+            android:textSize="140sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:format12Hour="hh : mm"/>
+        <TextClock
+            android:id="@+id/textClockSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/_00"
+            android:textSize="60sp"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:format12Hour="  ss"/>
+
+        <TextClock
+            android:id="@+id/textClockAmPm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="AM"
+            android:textSize="70sp"
+            android:textAllCaps="true"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:format12Hour="a"/>
+
+    </LinearLayout>
+
+
+    <TextClock
+        android:id="@+id/textClockDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="45sp"
+        android:text="OCT 15, 2022"
+        android:fontFamily=""
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:format12Hour="MMM  dd"/>
+
+    <TextClock
+        android:id="@+id/textClockYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="45sp"
+        android:text="OCT 15, 2022"
+        android:fontFamily=""
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:format12Hour="yyyy"/>
+
+</LinearLayout>
